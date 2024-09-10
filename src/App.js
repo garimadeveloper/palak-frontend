@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import CompanySection from './component/home/CompanySection';
+import FAQ from './component/home/FAQItem';
+import BlogSection from './component/home/BlogPost';
+import PricingPlan from './component/home/PricingPlan';
+import TopFeatures from './component/home/TopFeatures';
+import ManageTools from './component/home/ManageTools';
+import Topbanner from './component/home/Topbanner';
+import CallToAction from './component/home/CallToAction';
+import Integration from './component/home/Integration';
+import ExploreDashBoard from './component/home/ExploreDashBoard'; 
+import Testimonials from './component/home/Testimonials';
+import Footer from './component/home/Footer';
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Topbanner />
+      <CompanySection />
+      <TopFeatures />
+      <ManageTools />
+      <PricingPlan />
+      <Testimonials/>
+      <FAQ />
+      <BlogSection />
+      <CallToAction />
+      <Integration />
+      <ExploreDashBoard /> 
+      <Footer/>
+      
+      {/* Updated component usage */}
+    </>
   );
 }
 
